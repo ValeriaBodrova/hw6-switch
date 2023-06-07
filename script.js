@@ -12,8 +12,14 @@ console.log(numOrStr)
 //}
 
 
-switch (true) {
-    case numOrStr === null: 
+switch (numOrStr) {
+    case null: 
     console.log('ви відмінили');
     break;
+    case "": 
+    console.log('Empty String');
+    case isNaN( +numOrStr ):
+    console.log('number is Ba_NaN');
+    default:
+    console.log('OK!');
 }
